@@ -1,4 +1,3 @@
-# student_operations.py
 from models.student import Student
 from models.undergraduate import Undergraduate
 from exceptions import InvalidIDException, DuplicateStudentIDException

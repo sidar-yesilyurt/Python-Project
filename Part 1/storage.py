@@ -1,15 +1,14 @@
-# storage.py
 import os
 from models.student import Student
 from models.undergraduate import Undergraduate
 
-def save_students(students, filename="students.txt"): #Saves a list of student objects to a text file.
+def save_students(students, filename="Part 1/students.txt"): #Saves a list of student objects to a text file.
     try:
         # Open the file in write mode
         with open(filename, "w") as file:
             # Process each student in the list
             for student in students:
-                # Check if student is an Undergraduate (special case)
+                # Check if student is an Undergraduate
                 if isinstance(student, Undergraduate):
                     # Write undergraduate record with all fields including minor
                     file.write(
@@ -22,12 +21,12 @@ def save_students(students, filename="students.txt"): #Saves a list of student o
                         f"student|{student.get_student_id()}|{student.get_name()}|"
                         f"{student.get_course()}|{student.get_year()}|\n"
                     )
-        return True  # Success
+        return True
     
     except Exception as e:
         # Handle any errors that occur during file operations
         print(f"Error saving students: {e}")
-        return False  # Failure
+        return False
 
 def load_students(filename="students.txt"):
     students = []

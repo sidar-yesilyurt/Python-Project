@@ -1,4 +1,3 @@
-# main.py
 # Import all necessary modules and classes
 from student_operations import add_student, delete_student, update_student, list_students
 from storage import save_students, load_students
@@ -82,6 +81,6 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
-# Standard Python idiom to run main() when executed directly
+#  Python idiom to run main() when executed directly
 if __name__ == "__main__":
     main()

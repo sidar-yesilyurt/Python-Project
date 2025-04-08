@@ -1,4 +1,3 @@
-# models/undergraduate.py
 
 # Import the Student class that we'll inherit from
 from models.student import Student

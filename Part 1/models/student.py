@@ -1,14 +1,11 @@
-# models/student.py
-
-# Define the Student class - a blueprint for creating student objects
 class Student:
     # The __init__ method is called when a new Student object is created
     def __init__(self, student_id, name, course, year):
-        # Initialize the student's attributes (with double underscore to make them private)
+        # Initialize the student's attributes as private variables
         self.__student_id = student_id  # Unique identifier for the student
         self.__name = name              # Student's full name
-        self.__course = course          # Course/program the student is enrolled in
-        self.__year = year              # Current year of study (e.g., 1 for first year)
+        self.__course = course          # Course the student is enrolled in
+        self.__year = year              # Current year of study 
 
     # Getter methods - allow access to private attributes from outside the class
     
@@ -21,7 +18,7 @@ class Student:
         return self.__name
 
     def get_course(self):
-        """Returns the student's course/program"""
+        """Returns the student's course"""
         return self.__course
 
     def get_year(self):
@@ -35,7 +32,7 @@ class Student:
         self.__student_id = student_id
 
     def update_course(self, new_course):
-        """Updates the student's course/program"""
+        """Updates the student's course"""
         self.__course = new_course
 
     # Other methods
