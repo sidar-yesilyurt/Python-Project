@@ -1,3 +1,2 @@
 student|12|sidar|cs|2024|
-student|kevin||||
 undergraduate|123|kevin|cs3|2024|cybersec

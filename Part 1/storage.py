@@ -28,7 +28,7 @@ def save_students(students, filename="Part 1/students.txt"): #Saves a list of st
         print(f"Error saving students: {e}")
         return False
 
-def load_students(filename="students.txt"):
+def load_students(filename="Part 1/students.txt"):
     students = []
     try:
         # Create file if it doesn't exist
