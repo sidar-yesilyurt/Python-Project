@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv(r"C:/Users/yesil/Desktop/Python Project/Part 2/messy_dataset.csv")
+df = pd.read_csv(r"Part 2/messy_dataset.csv")
 print("Initial Dataset:")
 print(df.head())
 
@@ -54,5 +54,5 @@ plt.title('Total Sales by Category')
 plt.show()
 
 # Save cleaned data
-df.to_csv(r"C:/Users/yesil/Desktop/Python Project/Part 2/clean_dataset.csv", index=False)
+df.to_csv(r"Part 2/clean_dataset.csv", index=False)
 print("\nCleaned dataset saved.")
