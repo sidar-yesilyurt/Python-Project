@@ -10,19 +10,7 @@ def validate_student_id(students, student_id):
     return True
 
 def add_student(students, student):
-    """Adds a new student to the system after validation.
-    
-    Args:
-        students: List of existing students
-        student: New student to add
-        
-    Returns:
-        bool: True if student was added successfully
-        
-    Raises:
-        InvalidIDException: If student ID is empty
-        DuplicateStudentIDException: If student ID already exists
-    """
+    """Adds a new student to the system after validation."""
     # Validate student ID is not empty
     if not student.get_student_id():
         raise InvalidIDException("Student ID cannot be empty")
