@@ -35,7 +35,7 @@ class Student:
         """Updates the student's course"""
         self.__course = new_course
 
-    # Other methods
+    # Get details method
     
     def get_details(self):
         """Returns a dictionary with all the student's details
